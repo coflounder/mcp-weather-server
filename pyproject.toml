@@ -1,0 +1,16 @@
+[project]
+name = "mcp-weather-server"
+version = "0.1.0"
+description = "MCP weather server using the US National Weather Service API"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "httpx",
+]
+
+[project.scripts]
+weather = "weather:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
